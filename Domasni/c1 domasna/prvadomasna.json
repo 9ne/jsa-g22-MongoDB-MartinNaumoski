@@ -1,0 +1,152 @@
+[
+  {
+    "brand": "Rolex",
+    "name": "Day-Date40",
+    "reference": "228239",
+    "caliber": 3255,
+    "availability": true,
+    "rating": 4.5,
+    "condition": "new",
+    "price": 47900
+  },
+  {
+    "brand": "Rolex",
+    "name": "Day-Just41",
+    "reference": "126334",
+    "caliber": 3235,
+    "availability": false,
+    "rating": 4.8,
+    "condition": "new",
+    "price": 15897
+  },
+  {
+    "brand": "Rolex",
+    "name": "Oyster-Perpetual",
+    "reference": "124300",
+    "caliber": 3230,
+    "availability": true,
+    "rating": 9,
+    "condition": "new",
+    "price": 9500
+  },
+  {
+    "brand": "Rolex",
+    "name": "Lady-Date-Just",
+    "reference": "279171",
+    "caliber": 2236,
+    "availability": true,
+    "rating": 3.5,
+    "condition": "new",
+    "price": 12995
+  },
+  {
+    "brand": "Rolex",
+    "name": "Sky-Dweller",
+    "reference": "326934",
+    "caliber": 3135,
+    "availability": false,
+    "rating": 5.8,
+    "condition": "new",
+    "price": 23900
+  },
+  {
+    "brand": "Rolex",
+    "name": "Cellini",
+    "reference": "50505",
+    "caliber": 3132,
+    "availability": true,
+    "rating": 6.5,
+    "condition": "new",
+    "price": 14200
+  },
+  {
+    "brand": "Rolex",
+    "name": "Air-King",
+    "reference": "126900",
+    "caliber": 3230,
+    "availability": true,
+    "rating": 7,
+    "condition": "new",
+    "price": 9599
+  },
+  {
+    "brand": "Rolex",
+    "name": "GMT-Master-II",
+    "reference": "126710BLRO",
+    "caliber": 3285,
+    "availability": false,
+    "rating": 8.9,
+    "condition": "new",
+    "price": 22999
+  },
+  {
+    "brand": "Rolex",
+    "name": "Yacht-Master-II",
+    "reference": "116680",
+    "caliber": 4161,
+    "availability": false,
+    "rating": 7.8,
+    "condition": "new",
+    "price": 22500
+  },
+  {
+    "brand": "Rolex",
+    "name": "Yacht-Master40",
+    "reference": "126622",
+    "caliber": 3235,
+    "availability": false,
+    "rating": 8.9,
+    "condition": "new",
+    "price": 17250
+  },
+  {
+    "brand": "Rolex",
+    "name": "Submariner",
+    "reference": "124060",
+    "caliber": 3130,
+    "availability": false,
+    "rating": 9,
+    "condition": "new",
+    "price": 13500
+  },
+  {
+    "brand": "Rolex",
+    "name": "Cosmograph-Daytona",
+    "reference": "116519LN",
+    "caliber": 4130,
+    "availability": false,
+    "rating": 9,
+    "condition": "new",
+    "price": 46500
+  },
+  {
+    "brand": "Rolex",
+    "name": "Sea-Dweller",
+    "reference": "126600",
+    "caliber": 3235,
+    "availability": false,
+    "rating": 7,
+    "condition": "new",
+    "price": 14945
+  },
+  {
+    "brand": "Rolex",
+    "name": "Explorer",
+    "reference": "124270",
+    "caliber": 3230,
+    "availability": false,
+    "rating": 10,
+    "condition": "new",
+    "price": 9625
+  },
+  {
+    "brand": "Rolex",
+    "name": "Milgaus",
+    "reference": "116400GV",
+    "caliber": 3131,
+    "availability": true,
+    "rating": 8,
+    "condition": "new",
+    "price": 11995
+  }
+]
