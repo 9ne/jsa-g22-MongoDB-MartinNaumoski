@@ -19,7 +19,7 @@ const connectDB = async () => {
     console.log('Mongo db connected...');
   } catch (err) {
     console.log(err);
-    return ('uspesno se konektiravme');
+    return ('we failed to connect!');
   }
 }
 
