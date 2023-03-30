@@ -21,7 +21,7 @@ const connectDB = async () => {
     console.log(err);
     return ('fail to connect...');
   }
-}
+};
 
 connectDB();
 
@@ -38,7 +38,9 @@ connectDB();
 
 app.get('/api/v1/watches', blogController.getAllBlogs);
 app.post('/api/v1/watches', blogController.createBlog);
-
+app.get('/api/v1/watches/:id', blogController.getBlog);
+app.patch('/api/v1/watches/:id', blogController.updateBlog);
+app.delete('/api/v1/watches/:id', blogController.deleteBlog);
 
 const port = 10000;
 

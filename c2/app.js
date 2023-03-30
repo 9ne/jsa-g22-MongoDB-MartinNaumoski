@@ -24,10 +24,10 @@ app.get('/api/v1/blogs', blogController.getAllBlogs);
 // so ovaa ruta go zemame samo id-to
 app.get('/api/v1/blogs/:id', blogController.getBlog);
 // so ovaa ruta prakjame informacii vo serverot, vo ovaj slucaj kreirame blog
-app.post('api/v1/blogs', blogController.createBlog);
+app.post('/api/v1/blogs', blogController.createBlog);
 // so patch pravime update na blogot
-app.patch('api/v1/blogs/:id', blogController.updateBlog);
-app.delete('api/v1/blogs/:id', blogController.deleteBlog);
+app.patch('/api/v1/blogs/:id', blogController.updateBlog);
+app.delete('/api/v1/blogs/:id', blogController.deleteBlog);
 
 const port = 10000;
 
