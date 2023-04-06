@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/css-rolex-watches.css">
+  <title>Rolex Watches</title>
+</head>
+<body>
+<div class="section-top">
+  <h1 class="section-top-title"><%= titleOfPage%></h1>
+  <img src="/images/LOGO.png" alt="" class="image-logo">
+</div>
+<div class="wrapper">
+  <div class="wrapper-flex">
+    <% if(blogs.length === 0) { %>  
+    <div class="no-blogs">
+    <p>No Blogs Found</p>
+    <% } else { %><% blogs.forEach(blog => { %>
+    </div>
+    <div class="card" >
+      <div class="card-content">
+        <h2 class="card-title">
+        <%= blog.title %>
+        </h2>
+        <p class="card-model">
+        Model: <%= blog.model %>
+        </p>
+        <div class="inner-form">
+          <form action="/watches/rolexwatches/delete/<%= blog._id %>" method="post">
+            <button type="submit">Delete</button>
+          </form>
+          <form action="/watches/rolexwatches/<%= blog._id %>" method="get">
+            <button type="submit">Read More</button>
+          </form>
+        </div>
+      </div>
+      <% }) %><% } %>
+    </div>
+  </div>
+  
+</div>
+
+<div class="wrapper-form">
+  <h2 class="form-title">
+    Add new watch
+  </h2>
+  <form action="/watches/rolexwatches" method="post">
+    <label for="title">Brand</label>
+    <input type="text" name="title" id="title" required>
+    <label for="model">Model</label>
+    <input type="text" name="model" id="model" required>
+    <label for="reference">Reference Number</label>
+    <input type="text" name="reference" id="reference" required>
+    <label for="movement">Type of movement</label>
+    <input type="text" name="movement" id="movement">
+    <label for="caliber">Type of caliber</label>
+    <input type="number" name="caliber" id="caliber" required>
+    <label for="material">Type of material</label>
+    <input type="text" name="material" id="material">
+    <label for="date">Date of production</label>
+    <input type="text" name="date" id="date" required>
+    <label for="price">Price of the watch</label>
+    <input type="number" name="price" id="price" required>
+    <input type="text" name="image" id="image" placeholder="image" required>
+    <button type="submit">Add new watch</button>
+  </form>
+</div>
+  
+
+</body>
+</html>

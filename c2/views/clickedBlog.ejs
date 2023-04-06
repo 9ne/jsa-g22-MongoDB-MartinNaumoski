@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2><%= blog.naslov%></h2>
+    <h2><%= blog.tekst%></h2>
+    <div>
+      <p>Ocenka: <%= blog.ocenak%></p>
+    </div>
+    <p>Avtor: <%= blog.vreme.toDateString() %></p>
+    <form method="post" action="blogs/delete/<%= blog._id%>">
+      <button type="submit">Delete</button>
+    </form>
+    <!-- da ima nova forma za update na blogot -->
+  </div>
+
+</body>
+</html>

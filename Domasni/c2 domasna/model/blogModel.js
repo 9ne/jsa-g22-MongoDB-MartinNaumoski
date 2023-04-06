@@ -1,21 +1,17 @@
 const mongoose = require('mongoose');
 
 const blogSchema = new mongoose.Schema({
-  brand: {
+  title: {
     type: String,
-    required: [true, 'Has to have a brand']
   },
   model: {
     type: String,
-    required: [true, 'Has to have a model name']
   },
   reference: {
     type: String,
-    required: [true, 'Has to have reference number']
   },
   movement: {
     type: String,
-    required: [true, 'Has to have a type of movement']
   },
   caliber: {
     type: String
@@ -25,19 +21,20 @@ const blogSchema = new mongoose.Schema({
   },
   availability: {
     type: Boolean,
-    required: [true, 'Must know if its available']
+    default: true
   },
-  year: {
+  date: {
     type: Number,
-    required: [true, 'Has to have date of production']
   },
   price: {
     type: Number,
-    required: [true, 'Has to have a price']
   },
-  date: {
+  image: {
+    type: String
+  },
+  dateAdd: {
     type: Date,
-    default: Date.now
+    default: Date.now()
   }
 });
 

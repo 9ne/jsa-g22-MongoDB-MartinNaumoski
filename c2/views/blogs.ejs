@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+  </head>
+  <body>
+    <h1>Welcome to EJS</h1>
+    <h1><%= naslovNaStranata %></h1>
+    <p>Godina: <%= godina %></p>
+    <% if(blogs.length === 0) { %>
+    <p>No Blogs Found</p>
+    <% } else { %><% blogs.forEach(blog => { %>
+    <div>
+      <h2><%= blog.naslov%></h2>
+      <p><%= blog.tekst %></p>
+      <div class="rating">
+        <p>Ocenka <%= blog.ocenka %></p>
+      </div>
+      <p class="author">Avtor: <%= blog.avtor %></p>
+      <p>Kreirano na <%= blog.vreme.toDateString() %></p>
+      <form action="/blogs/delete/<%= blog._id %>" method="post">
+        <button type="submit">Delete</button>
+      </form>
+      <button type="button">
+        <a href="/blogs/<%= blog._id %>">Go to Phone</a>
+      </button>
+    </div>
+    <% }) %> <% } %>
+
+    <form action="/blogs" method="POST">
+      <label for="naslov">Naslov:</label>
+      <input type="text" name="naslov" id="naslov" required />
+      <label for="tekst">Tekst:</label>
+      <textarea name="tekst" id="tekst" required cols="30" rows="10"></textarea>
+      <label for="ocenka">Ocenka:</label>
+      <input type="number" required name="ocenka" id="ocenka" min="1" max="5" />
+      <label for="avtor">Avtor:</label>
+      <input type="text" name="avtor" id="avtor" required />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

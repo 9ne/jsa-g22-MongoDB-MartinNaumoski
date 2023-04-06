@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watches</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1><%= titleOfPage %></h1>
+    <div class="wrapper-watches">
+      <div class="wrapper-watches-card">
+        <% if(blogs.length === 0) { %>
+        <p>No Blogs Found</p>
+        <% } else { %>
+          <div class="card">
+            <div class="left">
+              <h2 class="blog-title">
+                Brand: <%= blogs.title %>
+              </h2>
+              <p class="card-model">
+                Model: <%= blogs.model %>
+              </p>
+              <p class="card-reference">
+                Reference number: <%= blogs.reference %>
+              </p>
+              <p class="card-movement">
+                Type of movement: <%= blogs.movement %>
+              </p>
+              <p class="card-caliber">
+                Type of caliber: <%= blogs.caliber %>
+              </p>
+              <p class="card-material">
+                Type of material: <%= blogs.material %>
+              </p>
+              <div class="availability-flex">
+                <p class="card-availability">
+                  Availability: <% if (blogs.availability === true) { %>
+                    <p class="availability-true">watch is available</p>
+                  <% } else { %>
+                    <p class="card-availability-false">watch is unavailable</p>
+                  <% } %>
+                </p>
+              </div>
+              <p class="card-year">
+                Date of production: <%= blogs.date %>
+              </p>
+              <p class="card-price">
+                Price: <%= blogs.price %>
+              </p>
+              <p class="card-added">
+                Watch added: <%= blogs.dateAdd.toDateString() %>
+              </p>
+            </div>
+            <div class="right">
+              <img src="/images/<%= blogs.image %>" alt="">
+            </div>
+          </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
